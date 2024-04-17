@@ -4,18 +4,33 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-  let counter = 5;
+
+
+  let [counter, setCounter] = useState(15)
+  //where counter is the variable
+  //setCounter is function responsible for changing the value of counter in front end
+
+
+  //let counter = 5;
   const addValue = () => {
     console.log("value added");
     counter = counter + 1;
+    if (counter == 21) {
+      counter = counter - 1;
+    }
     console.log(counter);
+    setCounter(counter)
   }
   const decreaseValue = () => {
     console.log("value decreased");
     counter = counter - 1;
+    if (counter == 0) {
+      counter = counter + 1;
+    }
     console.log(counter);
+    setCounter(counter);
   }
+ 
   return (
     <>
       <h1>vite-counter</h1>
@@ -27,5 +42,9 @@ function App() {
     </>
   )
 }
+//for ui updation, ie to chnage the value of the variabkle in the frontend we use react hooks
+//import { useState } from 'react'
+//effect state
+//custom hooks
 
 export default App
