@@ -1,8 +1,8 @@
 import React from 'react'
-
-function card(props) {
-    console.log("props", props)
-    console.log(props.name);
+ //function card ({username , btntext="visit me "}) to paas the default value
+ function card(props) {
+   // console.log("props", props)
+    //console.log(props.name);
   return (
     <div className="relative h-[400px] w-[300px] rounded-md">
   <img
@@ -24,5 +24,12 @@ function card(props) {
 </div>
   )
 }
+
+//instead of calling the props in the function, ex function card(props)
+// we can destructure the props in the function directly
+// ex - function card({name})
+
+// function card({name, btntext}) {
+
 
 export default card
