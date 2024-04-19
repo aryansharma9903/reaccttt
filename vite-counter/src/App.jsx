@@ -6,7 +6,7 @@ import './App.css'
 function App() {
 
 
-  let [counter, setCounter] = useState(15)
+  let [counter, setCounter] = useState(15)//hooks
   //where counter is the variable
   //setCounter is function responsible for changing the value of counter in front end
 
