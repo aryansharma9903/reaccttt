@@ -1,6 +1,8 @@
 import { useState } from 'react'
 //in this for onclick function
-//setColor is passed as a callback function and not directly as the onclick accepts function 
+//setColor is passed as a callback function and not directly as the onclick accepts function only
+//passing stColor will provide the reference to that function and the return value will be passed in onclick
+//but we dont want that, so we pass the whole function as a callback.
 function App() {
   const [color, setColor] = useState("olive")
   return (
