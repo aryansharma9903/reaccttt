@@ -57,6 +57,7 @@ export default function Header() {
                             <li>
                             <NavLink
                                 to = "/about"
+                                //IMP!!!!!
                                 //we specify the route here
                                 //and this route is defined in the main.jsx file 
                                 //under createBrowserRouter Method
@@ -81,7 +82,7 @@ export default function Header() {
                             </li>
                             <li>
                             <NavLink
-                                to = "https://github.com/aryansharma9903"
+                                to = "/github"
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }

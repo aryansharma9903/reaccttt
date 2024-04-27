@@ -92,7 +92,7 @@ export default function Contact() {
                                 <label for="name" className="hidden">
                                     Full Name
                                 </label>
-                                <inp ut
+                                <input
                                     type="name"
                                     name="name"
                                     id="name"
